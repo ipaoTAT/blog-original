@@ -1,1 +1,9 @@
-A Simple Blog for ipaoTAT
+---
+layout: default
+title: 文章目录
+---
+{% if site.theme == 'kunka' %}
+	{% include {{site.theme}}_index.html %}
+{% else %}
+	{% include default_index.html %}
+{% endif %}
