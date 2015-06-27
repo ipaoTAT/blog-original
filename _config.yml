@@ -1,0 +1,16 @@
+username: ipaotat
+baseurl: 
+markdown: redcarpet
+safe: false
+highlighter: pygments
+title: The way to Go!
+description: 
+theme: slate
+# theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine
+# those themes are all come from GitHub Pages Themes
+github: ipaoTAT
+disqusname: ipaotat
+paginate: 5
+paginate_path: "page:num"
+kramdown:
+        input: GFM

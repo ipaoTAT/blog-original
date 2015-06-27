@@ -1,0 +1,18 @@
+---
+layout: page
+title: 文章归档
+header: Posts By Category
+group: navigation
+---
+
+{% for category in site.categories %} 
+<h2>{{ category[0] | join: "/" }}&nbsp;({{category[1] | size}})</h2>
+  <ul>
+    {% assign pages_list = category[1] %}  
+    {% for post in pages_list %}
+    <li>
+    <a href="{{post.url}}">{{post.title}}</a>&nbsp;&nbsp;{{post.date | date: "%Y-%m-%d"}}
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
