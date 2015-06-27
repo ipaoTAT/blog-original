@@ -246,12 +246,35 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
+#post_forkme_banner {
+  display: inline;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  float:right;
+}
+
 #header_wrap {
   background: #212121;
 }
 
+#post_header_wrap {
+  background: #212121;
+  position:fixed;
+  z-index:100;
+}
+
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
+}
+
+#post_header_wrap .inner {
+  padding: 0px 10px 0px 10px;
 }
 
 #project_title {
@@ -260,6 +283,15 @@ Full-Width Styles
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
+}
+
+#post_project_title {
+  margin: 0;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
+  float: left;
 }
 
 #project_tagline {
