@@ -10,6 +10,17 @@ by Jason Costello, @jsncostello
 Theme Styles
 *******************************************************************************/
 
+@font-face { 
+  font-family: 'purisa';
+  src: url('../fonts/purisa-webfont.eot'); 
+  src: url('../fonts/purisa-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/purisa-webfont.woff') format('woff'),
+  url('../fonts/purisa-webfont.ttf') format('truetype'),
+  url('../fonts/purisa-webfont.svg#Regular') format('svg');
+  font-weight: normal;
+  font-style: normal; 
+}
+
 body {
   box-sizing: border-box;
   color:#373737;
@@ -288,6 +299,7 @@ Full-Width Styles
 #post_project_title {
   margin: 0;
   color: #fff;
+  font-family: purisa;
   font-size: 32px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
