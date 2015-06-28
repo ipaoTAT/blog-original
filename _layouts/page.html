@@ -7,6 +7,24 @@
     <meta name="description" content="{{site.username}}'s blog based on GitHub Pages" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{site.baseurl}}/themes/{{site.theme}}/stylesheets/stylesheet.css">
 
+	<script language="javascript">
+		window.onscroll=function(){
+		    var t = document.documentElement.scrollTop || document.body.scrollTop;
+			var ele = document.getElementsByClassName("inner")[0];
+			
+			if(t <= 80){
+				var base = (80 - t) / 80;
+				ele.style.paddingTop = 50 * base + "px";
+				ele.style.paddingBottom = 30 * base + "px";
+				document.getElementById("project_title").style.fontSize = 32 + 10 * base + "px";
+			}else{
+				ele.style.paddingTop = "0px";
+				ele.style.paddingBottom = "0px";
+				document.getElementById("project_title").style.fontSize = 32 + "px";
+			}
+		}
+	</script>
+
     <title>{{page.title}}</title>
   </head>
 
@@ -30,7 +48,6 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-	xasxaxaxas
       <section id="main_content" class="inner">
        <h1>{{page.title}}</h1>
 {{content}}
