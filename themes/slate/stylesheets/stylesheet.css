@@ -243,10 +243,7 @@ Full-Width Styles
 }
 
 #forkme_banner {
-  display: block;
-  position: absolute;
-  top:0;
-  right: 10px;
+  display: inline;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
@@ -255,6 +252,7 @@ Full-Width Styles
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  float:right;
 }
 
 #post_forkme_banner {
@@ -298,6 +296,7 @@ Full-Width Styles
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
+  float: left;
 }
 
 #post_project_title {
