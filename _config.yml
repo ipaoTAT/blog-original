@@ -4,7 +4,7 @@ markdown: redcarpet
 safe: false
 highlighter: pygments
 title: The way to Go!
-description: 
+description: A simple blog of ipaoTAT.
 theme: slate
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine
 # those themes are all come from GitHub Pages Themes
