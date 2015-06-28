@@ -311,6 +311,14 @@ Full-Width Styles
   float: left;
 }
 
+#project_title a, #post_project_title a{
+  text-decoration:none;
+}
+
+#project_title a:hover, #post_project_title a:hover{
+  text-decoration:none;
+}
+
 #project_tagline {
   color: #fff;
   font-family: purisa;
