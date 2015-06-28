@@ -12,11 +12,11 @@ Theme Styles
 
 @font-face { 
   font-family: 'purisa';
-  src: url('../fonts/purisa-webfont.eot'); 
-  src: url('../fonts/purisa-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/purisa-webfont.woff') format('woff'),
-  url('../fonts/purisa-webfont.ttf') format('truetype'),
-  url('../fonts/purisa-webfont.svg#Regular') format('svg');
+  src: url('../fonts/purisa/purisa-webfont.eot'); 
+  src: url('../fonts/purisa/purisa-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/purisa/purisa-webfont.woff') format('woff'),
+  url('../fonts/purisa/purisa-webfont.ttf') format('truetype'),
+  url('../fonts/purisa/purisa-webfont.svg#Regular') format('svg');
   font-weight: normal;
   font-style: normal; 
 }
