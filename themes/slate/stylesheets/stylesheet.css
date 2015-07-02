@@ -20,6 +20,26 @@ Theme Styles
   font-weight: normal;
   font-style: normal; 
 }
+@font-face { 
+  font-family: 'pantheon';
+  src: url('../fonts/pantheon/pantheon-webfont.eot'); 
+  src: url('../fonts/pantheon/pantheon-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pantheon/pantheon-webfont.woff') format('woff'),
+  url('../fonts/pantheon/pantheon-webfont.ttf') format('truetype'),
+  url('../fonts/pantheon/pantheon-webfont.svg#Regular') format('svg');
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'porker_style';
+  src: url('../fonts/porker_style/porker_style-webfont.eot'); 
+  src: url('../fonts/porker_style/porker_style-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/porker_style/porker_style-webfont.woff') format('woff'),
+  url('../fonts/porker_style/porker_style-webfont.ttf') format('truetype'),
+  url('../fonts/porker_style/porker_style-webfont.svg#Regular') format('svg');
+  font-weight: normal;
+  font-style: normal; 
+}
 
 body {
   box-sizing: border-box;
@@ -294,7 +314,7 @@ Full-Width Styles
 #project_title {
   margin: 0;
   color: #fff;
-  font-family: purisa;
+  font-family: poker_style;
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
@@ -304,7 +324,7 @@ Full-Width Styles
 #post_project_title {
   margin: 0;
   color: #fff;
-  font-family: purisa;
+  font-family: pantheon;
   font-size: 32px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
