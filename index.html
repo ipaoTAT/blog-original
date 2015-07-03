@@ -15,7 +15,7 @@ layout: page
 var MAX_HEIGHT = 50;
 window.onload=function(){
     var contents = document.getElementsByClassName("content");
-    for(var i = 0; i < contents.length(); i++){
+    for(var i = 0; i < contents.length; i++){
         var contentdiv = contents[i];
         if(parseInt(contentdiv.style.height) > MAX_HEIGHT){
             contentdiv.style.height = MAX_HEIGHT + "px";
@@ -25,7 +25,7 @@ window.onload=function(){
 }
 
 function more(div){
-    if(div.innerText.indexof("More") > -1){
+    if(div.innerText.indexOf("More") > -1){
         div.parent.style.height = "auto";
         div.innerText = "Click To Close";
     }else{
