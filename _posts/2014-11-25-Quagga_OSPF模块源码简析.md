@@ -10,6 +10,7 @@ comments: true
 ##Quagga OSPF模块源码简析
 
 ###1. Quagga简介
+
 <!-- more -->
 Quagga软件原名是Zebra是由一个日本开发团队编写的一个以GNU版权方式发布的软件。当前版本是0.99.23。Quagga能够同时支持RIPv1、RIPv2、RIPng、OSPFv2、OSPFv3、BGP-4和 BGP-4+等诸多TCP/IP协议。
 Quagga的特性：

@@ -9,6 +9,7 @@ tags: [ubuntu jekyll]
 注意不要使用apt-get直接安装jekyll，默认是老版本的，运行不了。
 
 首先需要安装依赖包，注意不仅要安装ruby，还需要ruby-dev和nodejs
+
 <!-- more -->
 
 ```bash
