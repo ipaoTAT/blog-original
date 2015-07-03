@@ -154,6 +154,8 @@ if __name__ == '__main__':
 
 ```
 
+<!-- more -->
+
 前段代码
 
 ```javascript

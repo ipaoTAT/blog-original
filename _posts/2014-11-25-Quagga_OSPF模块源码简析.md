@@ -21,6 +21,7 @@ Quagga OSPF模块的基本结构如下图：
 
 
 ![quagga ospf 结构图](/blog_imgs/2014-11-25-Quagga_OSPF模块源码简析/quagga_ospf.png)
+<!-- more -->
 
 
 ###3. Quagga OSPF各子模块结构及其相互调用细节

@@ -41,6 +41,7 @@ comments: true
 		thread.start();
 	}
 ```
+<!-- more -->
 
 当然， Runnalbe 对象，也不是只有这一种形式，例如如果我们想要线程执行时返回一个值，就需要用到另一种 Runnalbe 对象，它
 对原来的 Runnalbe 对象进行了包装。
