@@ -9,6 +9,7 @@ tags: [libvirt]
 ## 1.设置libvirtd
 
 编辑`/etc/libvirt/libvirtd.conf`
+<!-- more -->
 
 ```
 listen_tls = 0

@@ -11,6 +11,7 @@ comments: true
 
 按 Java 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象。而从 HotSpot 虚拟机的角度看，创建一个虚拟机线程
 有两种方式，一种是创建 Thread 对象，另一种是创建 一个本地线程，加入到虚拟机线程中。
+<!-- more -->
 
 如果从 Java 语法的角度。有两种方法。
 
@@ -41,7 +42,6 @@ comments: true
 		thread.start();
 	}
 ```
-<!-- more -->
 
 当然， Runnalbe 对象，也不是只有这一种形式，例如如果我们想要线程执行时返回一个值，就需要用到另一种 Runnalbe 对象，它
 对原来的 Runnalbe 对象进行了包装。

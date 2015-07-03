@@ -13,6 +13,7 @@ category: 虚拟化
 1. windows系统已经安装
 2. windows已经安装virtio driver
 3. 远程桌面开启，最好关闭防火墙
+<!-- more -->
 
 ## 设置MTU
 

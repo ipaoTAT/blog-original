@@ -10,7 +10,7 @@ theme: slate
 # those themes are all come from GitHub Pages Themes
 github: ipaoTAT
 disqusname: ipaotat
-paginate: 5
+paginate: 10
 paginate_path: "page:num"
 kramdown:
         input: GFM

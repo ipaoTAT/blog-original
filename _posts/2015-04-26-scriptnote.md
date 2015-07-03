@@ -7,6 +7,7 @@ tags: [linux,sed]
 ---
 
 ## 1. 删除所有的换行符和空格符
+<!-- more -->
 
 ```bash
 sed  -e ':a;N;s/\n//;s/ //g;ba' test.txt
