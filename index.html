@@ -11,30 +11,6 @@ layout: page
 </ul>
 -->
 
-<script language="javascript">
-var MAX_HEIGHT = 50;
-window.onload=function(){
-    var contents = document.getElementsByClassName("content");
-    for(var i = 0; i < contents.length; i++){
-        var contentdiv = contents[i];
-        if(parseInt(contentdiv.style.height) > MAX_HEIGHT){
-            contentdiv.style.height = MAX_HEIGHT + "px";
-            contentdiv.children[contentdiv.children.length - 1].style.display = "";
-        }
-    }
-}
-
-function more(div){
-    if(div.innerText.indexOf("More") > -1){
-        div.parent.style.height = "auto";
-        div.innerText = "Click To Close";
-    }else{
-        div.parent.style.height = MAX_HEIGHT + "px";
-        div.innerText = "Click For More";
-    }
-}
-</script>
-
 <!-- 遍历分页后的文章 -->
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
@@ -65,10 +41,12 @@ function more(div){
   </p>
   -->
   <div class="content">
-    {{post.content}}
-    <div class="clickformore" onclick="more(this)">
-        Click For More...
-    </div>
+        { % if post.content contains "<!-- more -->" %}
+        { { post.content | split:"<!-- more -->" | first % }}
+        <h4><a href='{ {post.url}}' title='Read more...'>Read more...</a></h4>
+        { % else %}
+        { { post.content}}
+        { % endif %}
   </div>
   <br/><br/>
 {% endfor %}
