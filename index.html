@@ -41,12 +41,12 @@ layout: page
   </p>
   -->
   <div class="content">
-        { % if post.content contains "<!-- more -->" %}
-        { { post.content | split:"<!-- more -->" | first % }}
-        <h4><a href='{ {post.url}}' title='Read more...'>Read more...</a></h4>
-        { % else %}
-        { { post.content}}
-        { % endif %}
+    {% if post.content contains "<!-- more -->" %}
+        {{ post.content | split:"<!-- more -->" | first %}}
+        <h4><a href='{{post.url}}' title='Read more...'>Read more...</a></h4>
+    {% else %}
+        {{ post.content}}
+    {% endif %}
   </div>
   <br/><br/>
 {% endfor %}
