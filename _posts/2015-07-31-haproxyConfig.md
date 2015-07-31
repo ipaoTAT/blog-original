@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Haproxy配置HTTP Referer为Host
+title: Haproxy配置HTTPReferer为Host
 comments: true
 category: 技术
 tags: [haproxy,http server]
 ---
+
 
 ```shell
 frontend http-in
