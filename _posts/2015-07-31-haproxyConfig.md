@@ -3,7 +3,7 @@ layout: post
 title: Haproxy配置HTTPReferer为Host
 comments: true
 category: 技术
-tags: [haproxy,http server]
+tags: [haproxy,http-server]
 ---
 
 
