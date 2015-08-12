@@ -1,9 +1,10 @@
+
 ---
 layout: post
 title: Haproxy配置HTTPReferer为Host
 comments: true
 category: 技术
-tags: [haproxy,http-server]
+tags: [haproxy,httpserver]
 ---
 
 
@@ -18,3 +19,4 @@ backend servers
 
     server servername ip:port weight 1 max conn 100000 check inter 1s
 ```
+
