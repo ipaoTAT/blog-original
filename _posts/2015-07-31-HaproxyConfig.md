@@ -8,7 +8,6 @@ tags: [haproxy,httpserver]
 ---
 
 
-```shell
 frontend http-in
     bind *:80
     default_backend servers
@@ -18,5 +17,4 @@ backend servers
     http-request set-heaser Referer http://%[req.hdr(host)]
 
     server servername ip:port weight 1 max conn 100000 check inter 1s
-```
 
