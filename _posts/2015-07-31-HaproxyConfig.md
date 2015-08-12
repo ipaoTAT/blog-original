@@ -7,6 +7,7 @@ category: 技术
 tags: [haproxy,httpserver]
 ---
 
+```python
 
 frontend http-in
     bind *:80
@@ -18,3 +19,4 @@ backend servers
 
     server servername ip:port weight 1 max conn 100000 check inter 1s
 
+```
