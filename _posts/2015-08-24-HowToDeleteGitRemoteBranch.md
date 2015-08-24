@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git查看、删除远程分支
+title: Git查看删除远程分支
 comments: true
 category: 工具
 tags: [Git]
@@ -9,7 +9,7 @@ tags: [Git]
 [toc]
 ##查看远程分支
 加上-a参数可以查看远程分支，远程分支会用红色表示出来（如果你开了颜色支持的话）：
-```shell
+```python
 $ /git/platform$ git branch -a
   master
 * v1.8
@@ -24,11 +24,11 @@ $ /git/platform$ git branch -a
 ##删除远程分支
 
 git 1.7以上可以直接删除分支：
-```shell
+```python
 $ git push origin --delete <branchName>
 ```
 之前版本则向remote分支push一个空本地分支
-```shell
+```python
 $ git push origin  :<branchName>
 ```
 <!-- more -->
@@ -42,7 +42,7 @@ $ git push origin  :<branchName>
 其他人再次执行fetch或者pull并不会删除这个他们本地的 b1 分支，运行 git branch -a 也不能看出这个branch被删除了，如何处理？
 使用下面的代码查看b1的状态：
 
-```shell
+```python
 $ git remote show origin
 * remote origin
   Fetch URL: git@github.com:xxx/xxx.git
@@ -59,6 +59,6 @@ $ git remote show origin
 这时候能够看到b1是stale的，使用 git remote prune origin 可以将其从本地版本库中去除。
 
 更简单的方法是使用这个命令，它在fetch之后删除掉没有与远程分支对应的本地分支：
-```shell
+```python
 $ git fetch -p
 ```
