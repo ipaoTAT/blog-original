@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git查看删除远程分支
+title: Git查看/删除远程分支
 comments: true
 category: 工具
 tags: [Git]
@@ -9,6 +9,7 @@ tags: [Git]
 [toc]
 ##查看远程分支
 加上-a参数可以查看远程分支，远程分支会用红色表示出来（如果你开了颜色支持的话）：
+
 ```python
 $ /git/platform$ git branch -a
   master
@@ -21,13 +22,17 @@ $ /git/platform$ git branch -a
   remotes/origin/v1.6
   remotes/origin/v1.7
 ```
+
 ##删除远程分支
 
 git 1.7以上可以直接删除分支：
+
 ```python
 $ git push origin --delete <branchName>
 ```
+
 之前版本则向remote分支push一个空本地分支
+
 ```python
 $ git push origin  :<branchName>
 ```
@@ -56,9 +61,11 @@ $ git remote show origin
   Local ref configured for 'git push':
     master pushes to master (up to date)
 ```
+
 这时候能够看到b1是stale的，使用 git remote prune origin 可以将其从本地版本库中去除。
 
 更简单的方法是使用这个命令，它在fetch之后删除掉没有与远程分支对应的本地分支：
+
 ```python
 $ git fetch -p
 ```
