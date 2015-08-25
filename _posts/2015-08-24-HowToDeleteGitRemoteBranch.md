@@ -11,7 +11,7 @@ tags: [Git]
 加上-a参数可以查看远程分支，远程分支会用红色表示出来（如果你开了颜色支持的话）：
 
 ```python
-$ /git/platform$ git branch -a
+$ git branch -a
   master
 * v1.8
   remotes/origin/master
