@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Haproxy配置HTTPReferer为Host
@@ -7,7 +6,6 @@ category: 技术
 tags: [haproxy,httpserver]
 ---
 
-1.
 
 ```python
 
