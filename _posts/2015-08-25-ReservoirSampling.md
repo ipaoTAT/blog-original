@@ -19,6 +19,7 @@ tags: [算法,等概率随机抽样,蓄水池抽样]
 对应C++代码如下：
 
 ```C++
+
 	＃include<iostream>
 	using namespace std;
     boolean is_choosen(int *a, int n, int k)
@@ -41,6 +42,7 @@ tags: [算法,等概率随机抽样,蓄水池抽样]
 		}
 		return 0;
 	}
+
 ```
 
 ###未知N
@@ -51,6 +53,7 @@ tags: [算法,等概率随机抽样,蓄水池抽样]
 可知每个元素被选中的概率都是1／n，满足随即抽样条件。代码如下
 
 ```C++
+
 	＃inlcude<iostream>
 	using namespace std;
 	/*N已知,但可能很大*/
@@ -80,6 +83,7 @@ tags: [算法,等概率随机抽样,蓄水池抽样]
 		}
 		return choice;
 	}
+
 ```
 
 <!-- more -->
@@ -102,6 +106,7 @@ tags: [算法,等概率随机抽样,蓄水池抽样]
 C++代码如下：
 
 ```C++
+
 	#include<iostream>
 	using namespace std;
 	int choose_k(istream &in, int k, int *res)
@@ -122,5 +127,7 @@ C++代码如下：
 			}
 		}
 	}
+
 ```
+
 已知N和未知N只有结束条件不同。
