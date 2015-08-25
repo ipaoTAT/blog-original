@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 等概率随机抽样方法
