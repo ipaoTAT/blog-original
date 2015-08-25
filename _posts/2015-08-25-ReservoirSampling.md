@@ -2,11 +2,10 @@
 ---
 layout: post
 title: 等概率随机抽样方法
-comments: false
+comments: true
 category: 算法
 tags: [算法,等概率随机抽样,蓄水池抽样]
 ---
-
 
 ###问题描述
 从N的规模中等概率随机抽出K个样本(0 < K <= N), 即每个元素被抽取的概率都是K/N。
