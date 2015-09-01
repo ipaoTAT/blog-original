@@ -19,7 +19,9 @@ tags: [算法,动态规划]
 那么,整个序列的LIS就等于max{DP[i]}, i=0,1,2....n。
 **代码：**
 由此可以写出代码：
+
 ```C++
+
 	#include<iostream>
 	using namespace std;
 	template<int N>
@@ -39,9 +41,13 @@ tags: [算法,动态规划]
 		}
 		return res;
 	}
+
 ```
+
 根据递推式，在运算过程中DP[i]只依赖于DP[i-1]，因此可以优化上述代码：
+
 ```C++
+
 	#include<iostream>
 	using namespace std;
 	template<int N>
@@ -59,7 +65,9 @@ tags: [算法,动态规划]
 		}
 		return res;
 	}
+
 ```
+
 **O(nlogn)算法**
 ##最长公共子序列
 ##最长公共子串
