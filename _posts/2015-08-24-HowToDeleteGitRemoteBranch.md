@@ -34,6 +34,7 @@ $ git push origin --delete <branchName>
 之前版本则向remote分支push一个空本地分支
 
 ```python
+$ git push <remote-hostname> <local-branch>:<remote-branch>
 $ git push origin  :<branchName>
 ```
 <!-- more -->
